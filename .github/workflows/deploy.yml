@@ -35,4 +35,7 @@ jobs:
             cd ~/slovoslavov-backend
             git pull origin main
             npm ci
+            docker compose up -d
+            npx prisma migrate deploy
+            npx prisma generate
             pm2 restart slovoslavov-backend || npm start
