@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node --watch src/index.ts",
-    "start": "pm2 start src/index.ts --name slovoslavov-backend"
+    "start": "pm2 start --name slovoslavov-backend -- node src/index.ts"
   },
   "keywords": [],
   "author": "",
